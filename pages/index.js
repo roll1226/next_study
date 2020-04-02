@@ -1,30 +1,16 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import Router from 'next/router'
-import React, { Component } from 'react';
-import Card from '../components/Card.js'
+import React, { Component } from 'react'
+import Layout from '../components/MyLayout.js'
 
 export default () => (
-  <div>
-    <Head>
-      <title key="title">
-        たいとる
-      </title>
-    </Head>
-
-    <div>
+  <Layout title={ 'たいとる' }>
+    <p>
       Welcome to next.js!
-    </div>
+    </p>
 
     <div>
       <img src="/static/cf32bf83640edfaf91f649eebe0ccd40.jpg" alt="天神子兎音様" />
-    </div>
-
-    <div>
-      <Card
-        title={'aaaaaa'}
-        description={'iiiiiii'}
-      />
     </div>
 
     <Link href="/fetch">
@@ -42,7 +28,7 @@ export default () => (
       value="fetchへ"
       onClick = {() => Router.push('/fetch')}
     />
-  </div>
+  </Layout>
 )
 
 class OnClick extends Component {
