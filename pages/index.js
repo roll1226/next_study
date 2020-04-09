@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 import Layout from '../components/MyLayout.js'
 
 export default () => (
-  <Layout title={ 'たいとる' }>
+  <Layout title='たいとる'>
     <p>
       Welcome to next.js!
     </p>
